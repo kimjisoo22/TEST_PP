@@ -23,7 +23,7 @@ pipeline{
             steps {
                 bat '''
                 call venv\\Scripts\\activate
-                pytest test_hello.py
+                pytest test.py
                 '''
             }
         }
@@ -34,7 +34,7 @@ pipeline{
 
                 bat '''
                     call venv\\Scripts\\activate
-                    python hello_world.py
+                    python hlo.py
                     '''
             }
         }
