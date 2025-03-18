@@ -12,9 +12,9 @@ pipeline{
             steps {
                 bat '''
                 python -m venv venv
-                call venu\\Script\\activate
+                call venv\\Scripts\\activate
                 pip install --upgrade pip
-                pip install -r requierment.txt
+                pip install -r requirement.txt
                 '''
             }
         }
@@ -22,7 +22,7 @@ pipeline{
         stage('Run Tests') {
             steps {
                 bat '''
-                call venu\\Scripts\\activate
+                call venv\\Scripts\\activate
                 pytest test_hello.py
                 '''
             }
