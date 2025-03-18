@@ -4,7 +4,7 @@ pipeline{
     stages {
         stage('Checkout Code') {
             steps {
-                git  crendtialsID : 'kimjisoo22',url: 'https://github.com/kimjisoo22/TEST_PP.git', branch='main'
+                git  crendtialsID : 'pathelloworld',url: 'https://github.com/kimjisoo22/TEST_PP.git', branch='main'
             }
         }
 
