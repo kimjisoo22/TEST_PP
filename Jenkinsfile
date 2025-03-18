@@ -4,12 +4,12 @@ pipeline{
     stages {
         stage('Checkout Code') {
             steps {
-                 git credentialsId : 'pathelloworld',url: 'https://github.com/kimjisoo22/TEST_PP.git', branch :'main'
+                     git credentialsId : 'pathelloworld' ,url: 'https://github.com/kimjisoo22/TEST_PP.git', branch : 'main'
             }
         }
 
         stage('Install Dependencies') {
-            steps {
+            steps{
                 bat '''
                 python -m venv venv
                 call venv\\Scripts\\activate
